@@ -314,23 +314,20 @@ h3{
 }
 
 .seccion-productos{
-    background-color: $color-violeta;
+    background-color: #fff;
     h2{
         text-align: center;
-        color: $color-celeste;
         margin-bottom: 1em;
     }   
         div.envio-pago{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 10em;
+            display: flex;
+            justify-content: space-evenly;
         }
             div.medios{
                 text-align: center;
                 justify-items: center;
             }
                 h3{
-                    color: $color-celeste;
                     padding-bottom: 1em;
                 }
                     i{
@@ -339,7 +336,7 @@ h3{
                         color: $color-celeste;
                     }
                         p{
-                            color: $color-blanco;
+                            font-weight: 500;
                         }
 }
 
