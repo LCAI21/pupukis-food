@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?1349945cfea72e3a744c8b3d04370f0e") format("truetype"),
+url("./flaticon.woff?1349945cfea72e3a744c8b3d04370f0e") format("woff"),
+url("./flaticon.woff2?1349945cfea72e3a744c8b3d04370f0e") format("woff2"),
+url("./flaticon.eot?1349945cfea72e3a744c8b3d04370f0e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1349945cfea72e3a744c8b3d04370f0e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "bio": "\f101",
+    "sin-colores-sinteticos": "\f102",
+    "love": "\f103",
+    "veterinario": "\f104",
+    "pets": "\f105",
+    "dieta": "\f106",
+    "instagram": "\f107",
+    "facebook": "\f108",
+    "paquete": "\f109",
+    "metodo-de-pago": "\f10a",
+    "llamada-telefonica": "\f10b",
+    "mapa": "\f10c",
+    "email": "\f10d",
+);
+
+.flaticon-bio:before {
+    content: map-get($flaticon-map, "bio");
+}
+.flaticon-sin-colores-sinteticos:before {
+    content: map-get($flaticon-map, "sin-colores-sinteticos");
+}
+.flaticon-love:before {
+    content: map-get($flaticon-map, "love");
+}
+.flaticon-veterinario:before {
+    content: map-get($flaticon-map, "veterinario");
+}
+.flaticon-pets:before {
+    content: map-get($flaticon-map, "pets");
+}
+.flaticon-dieta:before {
+    content: map-get($flaticon-map, "dieta");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-paquete:before {
+    content: map-get($flaticon-map, "paquete");
+}
+.flaticon-metodo-de-pago:before {
+    content: map-get($flaticon-map, "metodo-de-pago");
+}
+.flaticon-llamada-telefonica:before {
+    content: map-get($flaticon-map, "llamada-telefonica");
+}
+.flaticon-mapa:before {
+    content: map-get($flaticon-map, "mapa");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}

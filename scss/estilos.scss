@@ -1,0 +1,527 @@
+$color-violeta: #522D76;
+$color-rojo: #F73C4A;
+$color-blanco: #fff;
+$color-celeste: #70ffea;
+$degrade: linear-gradient(to right, #70ffea, #522D76);
+$font-family: "Montserrat";
+
+@mixin centrado( $display , $justify-content , $align-items, $flex-direction ){
+
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/*HEADER*/
+
+.navbar{
+    @include centrado(flex, space-between, center, row);
+    width: 100%;
+    background-image: url(../images/fondo-menu.png);
+    background-repeat: repeat;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0em 4em;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.383);
+
+    .navbar__alineado{
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    &__menu{
+        list-style-type: none;
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+        transition: 300ms ease-in-out;
+    }
+
+        &__menu:hover{
+            text-decoration: underline #db74bb 0.2em;
+        }
+
+    &__link{
+        color: #4FB2A3;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: $font-family;
+        transition: 300ms ease-in-out;
+    }
+    
+        &__link:hover{
+            color: $color-rojo;
+            transform: scale(1.05);
+        }
+
+    &__responsive{
+        background-color: #4FB2A3;
+        border: 1px solid #000;
+    }
+}
+
+.logo-pupukis{
+    width: 7em;
+    z-index: 1;
+}
+
+/*GENERALES*/
+
+.texto{
+    font-size: 1em;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 1em 0;
+}
+
+.titulo{
+    margin-bottom: 1em;
+}
+
+.margen{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.centrar{
+    @include centrado(flex, center, center, row);
+}
+
+/*BOTONES*/
+
+.boton {
+	display: inline-block;
+	padding: 0.6em 1.7em;
+	border-radius: 0.3em;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+    font-family: $font-family;
+    color: $color-blanco;
+    background: $color-rojo;
+    border: 0px;
+    margin-top: 1.3em;
+
+        &:hover{
+            background-color: $color-violeta;
+            color: $color-blanco;
+        }
+}
+
+.boton-carrito{
+    @extend .boton;
+    margin: 0.5em 0;
+}
+
+/*COLORES*/
+
+.violeta{
+    color: $color-violeta;
+}
+
+.rojo{
+    color: $color-rojo;
+}
+
+.blanco{
+    color: $color-blanco;
+}
+
+.celeste{
+    color: $color-celeste;
+}
+
+/*TITULOS Y PARRAFO*/
+
+h1{
+    font-family: $font-family;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2, h3, h4{
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+p{
+    font-family: $font-family;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/*GALERIA HOME*/
+
+.galeria{
+    position: relative;
+
+    &__caja{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100% - 30%;
+        height: 100% - 70%;
+        margin: auto;
+    }
+
+    &__titulo{
+        color: $color-celeste;
+    }
+
+    &__texto{
+        margin-top: 0.7em;
+        display: block;
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #BDFFF5;
+    }
+}
+
+/*TARJETAS HOME*/
+
+.tarjeta {
+    @include centrado(flex, inherit, inherit, column);
+    display: flex;
+	flex-flow: column;
+	border-radius: 0.3em;
+	overflow: hidden;
+	box-shadow: 0 10px 25px -10px black;
+	transition: 300ms ease-in-out;
+    margin-bottom: 1.5em;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 15px 35px -10px black;
+    }
+
+    &__imagen{
+        width: 100%;
+	    flex-basis: 250px;
+    }
+
+    &__caja{
+        @include centrado(flex, space-between, center, column);
+        gap: 1em;
+        flex: 1;
+        padding: 1.5em;
+        text-align: center;
+        background-color: $color-blanco;
+    }
+
+    &__texto{
+        color: $color-violeta;
+        font-family: $font-family;
+    }
+
+    &__btn{
+        font-size: 0.8em;
+        background-color: $color-rojo;
+        color: $color-blanco;
+        text-decoration: none;
+        font-family: $font-family;
+        padding: 0.6em 1.7em;
+	    border-radius: 0.3em;
+	    font-weight: 800;
+	    text-transform: uppercase;
+	    letter-spacing: 0.09em;
+    }
+
+        &__btn:hover{
+            background-color: $color-violeta;
+            color: $color-blanco;
+        }
+
+    #producto-1 {
+        background: url(../images/helados.png) no-repeat 50% 60% / cover;
+    }
+    
+    #producto-2 {
+        background: url(../images/bocados-frozen.png) no-repeat 50% 60% / cover;
+    }
+    
+    #producto-3 {
+        background: url(../images/gelatinas-yum.png) no-repeat 50% 60% / cover;
+    }
+    
+    #producto-4 {
+        background: url(../images/grisines.png) no-repeat 50% 60% / cover;
+    }
+    
+    #producto-5 {
+        background: url(../images/dips.png) no-repeat 50% 60% / cover;
+    }
+}
+
+.nuestros-productos{
+    background: $degrade;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*ICONOS*/
+
+.icono{
+    font-size: 4em;
+    padding: 0.3em;
+    background: -webkit-linear-gradient(top, #F73C4A 0%, #522D76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto-icono{
+    padding: 0 1em;
+    font-size: 0.9em;
+}
+
+/*PAGINA PRODUCTOS*/
+
+.banner-principal{
+    max-width: 100%;
+}
+
+.categorias-productos{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.seccion-productos{
+    background-color: $color-violeta;
+    h2{
+        text-align: center;
+        color: $color-celeste;
+        margin-bottom: 1em;
+    }   
+        div.envio-pago{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 10em;
+        }
+            div.medios{
+                text-align: center;
+                justify-items: center;
+            }
+                h3{
+                    color: $color-celeste;
+                    padding-bottom: 1em;
+                }
+                    i{
+                        font-size: 5em;
+                        padding: 0.3em;
+                        color: $color-celeste;
+                    }
+                        p{
+                            color: $color-blanco;
+                        }
+}
+
+.card{
+    @extend .tarjeta;
+    align-items: inherit;
+}
+
+.titulo-productos{
+    margin: 1em 0;
+}
+
+/*NOSOTROS*/
+
+.seccion-nosotros{
+    text-align: center;
+    background-color: $color-violeta;
+}
+
+/*CLIENTES*/
+
+.imagenes-clientes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.fondo-degrade{
+    background: $degrade;
+}
+
+/*CONTACTO*/
+
+.formulario{
+    background-color: $color-violeta;
+
+    &__contacto{
+        display: grid;
+        align-items: center;
+    }
+
+    &__datos{
+        color: #fff;
+        padding: 0.5em;
+    }
+
+    &__icono{
+        color: #70ffea;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: $font-family;
+        transition: 300ms ease-in-out;
+        font-size: 50px;
+    }
+
+    &__campo{
+        color: $color-blanco;
+    }
+
+    &__btn{
+        width: 100%;
+    }
+
+        &__btn:hover{
+            background-color: $color-celeste;
+            color: $color-violeta;
+        }
+}
+
+/*FOOTER*/
+
+.redes{
+    background-color: #4fb2a3;
+
+    .redes__newsletter{
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+
+    &__icono{
+        padding-top: 1em;
+    }
+
+    &__link{
+        font-size: 3em;
+        padding: 0.3em 0.3em 0 0.3em;
+        color: $color-violeta;
+    }
+
+    &__texto-footer{
+        color: $color-blanco;
+        padding: 1.5em;
+        text-align: center;
+        font-family: $font-family;
+        border-top: 0.2em solid $color-celeste;
+        background-color: #000;
+        margin-bottom: 0;
+    }
+}
+
+.caricatura{
+    width: 40em;
+}
+
+.mensaje-error{
+    font-size: 3em;
+}
+
+.error{
+    background-color: $color-violeta;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 320px) and (max-width: 575px){
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1em;
+        padding: 1em 1.5em;
+    }
+
+    .texto{
+        padding: 1em 4em;
+    }
+
+    .galeria__caja {
+        display: none;
+    }
+
+    .imagenes-clientes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px){
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+        padding: 1em 1.5em;
+    }
+
+    .tarjeta{
+        margin-bottom: 1.5em;
+    }
+
+    .carousel-caption {
+        bottom: 3em;
+    }
+
+    .texto-galeria h1 > span {
+        margin-top: 0.7em;
+        display: block;
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #BDFFF5;
+    }
+    
+    .texto-galeria h1{
+        font-size: 1.5em;
+    }
+
+    .texto-galeria a.btn {
+        padding: 0.5em 1em;
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+
+    .galeria__caja {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    .contenedor{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    header{
+        padding: 0.5em 8em;
+    }
+}

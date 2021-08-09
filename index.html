@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupukis Food - Mascotas saludables</title>
+    <meta name="description" content="Helados y snacks naturales para tus mascotas. A base de frutas, verduras y carnes cocidas. Sin colorantes ni conservantes." />
+    <meta name="keywords" content="mascotas saludables, snacks naturales, sin colorantes, sin conservantes, rico, sano, alimentos naturales, alimentos orgánicos, snacks para mascotas" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/jpg" href="svg/pupukis-food-logo.svg"/>
+    <link rel="stylesheet" href="font/flaticon.css" type="text/css">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="svg/pupukis-food-logo.svg" alt="Logo Pupukis Food" class="logo-pupukis"></a>
+      <button class="navbar__responsive navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="dropdown">
+                <ul class="navbar-nav navbar__alineado mb-2 mb-lg-0">
+                  <li class="navbar__menu">
+                    <a class="navbar__link" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="navbar__menu dropdown">
+                    <a class="navbar__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="productos.html">Helados</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Bocados Frozen</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Gelatinas Yum</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Grisines</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Dips</a></li>
+                    </ul>
+                  </li>
+                  <li class="navbar__menu">
+                    <a class="navbar__link" href="nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="navbar__menu">
+                    <a class="navbar__link" href="clientes.html">CLIENTES</a>
+                  </li>
+                  <li class="navbar__menu">
+                    <a class="navbar__link" href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <main>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/banner-home.png" class="img-fluid" alt="Perros por comer un snack">
+                <div class="carousel-caption galeria__caja">
+                    <h1 class="galeria__titulo">MASCOTAS SALUDABLES
+                        <span class="galeria__texto">Helados y snacks naturales, a base de frutas, verduras y carnes cocidas. Sin colorantes ni conservantes.</span>
+                    </h1>
+                    <a href="productos.html" class="btn boton">Ver productos</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner-home-2.png" class="img-fluid" alt="Foto de perro posando">
+                <div class="carousel-caption galeria__caja">
+                    <h1 class="galeria__titulo">MASCOTAS SALUDABLES
+                        <span class="galeria__texto">Helados y snacks naturales, a base de frutas, verduras y carnes cocidas. Sin colorantes ni conservantes.</span>
+                    </h1>
+                    <a href="productos.html" class="btn boton">Ver productos</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+
+    <section class="container-fluid margen nuestros-productos">
+      <h1 class="titulo blanco text-center">NUESTROS PRODUCTOS</h1>
+      <div class="row gx-5">
+          <div class="col">
+              <article class="tarjeta">
+                  <div class="tarjeta__imagen" id="producto-1"></div>
+                  <div class="tarjeta__caja">
+                      <h3 class="tarjeta__texto">HELADOS</h3>
+                      <a href="#" class="tarjeta__btn">Ver productos</a>
+                  </div>
+              </article>
+          </div>
+          <div class="col">
+              <article class="tarjeta">
+                  <div class="tarjeta__imagen" id="producto-2"></div>
+                  <div class="tarjeta__caja">
+                      <h3 class="tarjeta__texto">BOCADOS FROZEN</h3>
+                      <a href="#" class="tarjeta__btn">Ver productos</a>
+                  </div>
+              </article>
+          </div>
+          <div class="col">
+              <article class="tarjeta">
+                  <div class="tarjeta__imagen" id="producto-3"></div>
+                  <div class="tarjeta__caja">
+                      <h3 class="tarjeta__texto">GELATINAS YUM</h3>
+                      <a href="#" class="tarjeta__btn">Ver productos</a>
+                  </div>
+              </article>
+          </div>
+          <div class="col">
+              <article class="tarjeta">
+                  <div class="tarjeta__imagen" id="producto-4"></div>
+                  <div class="tarjeta__caja">
+                      <h3 class="tarjeta__texto">GRISINES</h3>
+                      <a href="#" class="tarjeta__btn">Ver productos</a>
+                  </div>
+              </article>
+          </div>
+          <div class="col">
+              <article class="tarjeta">
+                  <div class="tarjeta__imagen" id="producto-5"></div>
+                  <div class="tarjeta__caja">
+                      <h3 class="tarjeta__texto">DIPS</h3>
+                      <a href="#" class="tarjeta__btn">Ver productos</a>
+                  </div>
+              </article>
+          </div>
+      </div>
+  </section>
+
+    <section class="container-fluid seccion-elegirnos margen">
+        <h2 class="titulo rojo text-center">¿POR QUÉ ELEGIRNOS?</h2>
+        <h3 class="text-center violeta">Vinimos a reinventar los snacks para mascotas.</h3>
+        <p class="texto violeta">Creemos que al <b>igual que los humanos</b>, las mascotas también deberían comer <b>rico, sano y variado</b>. Por eso, elaboramos nuestros productos de manera creativa, reinventando los snacks para mascotas y utilizando solo <b>alimentos naturales y orgánicos de calidad</b> con el fin de darle lo mejor a nuestros mejores amigos.</p>
+        <div class="row">
+            <div class="col-6 col-sm-4 col-lg-2 text-center">
+                <i class="flaticon-veterinario icono"></i><h4 class="text-center texto-icono violeta">Aprobados por veterinarios especialistas en nutrición</h4>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center">
+                <i class="flaticon-bio icono"></i><h4 class="text-center texto-icono violeta">A base de frutas, verduras y carnes cocidas</h4>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center">
+                <i class="flaticon-dieta icono"></i><h4 class="text-center texto-icono violeta">Sin T.A.C.C. y aptos para mascotas que están a dieta</h4>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center">
+                <i class="flaticon-sin-colores-sinteticos icono"></i><h4 class="text-center texto-icono violeta">Productos sin colorantes y conservantes</h4>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center">
+                <i class="flaticon-love icono"></i><h4 class="text-center texto-icono violeta">Ideal para compartir un momento con tu mascota</h4>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 text-center">
+                <i class="flaticon-pets icono"></i><h4 class="text-center texto-icono violeta">Aptos para perros y gatos, a todos les encanta</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="redes">
+        <form class="container redes__newsletter blanco">
+            <h2 class="text-center ">SUSCRIBITE AL NEWSLETTER</h2>
+            <div class="row justify-content-center">
+              <input type="email" class="form-control redes__campo" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn boton btn-primary col-4 col-md-2">Suscribirme</button>
+              </div>
+            <div class="row justify-content-center redes__icono">
+                <div class="col-2 col-md-1 text-center">
+                    <a href="https://www.facebook.com/PupukisFood/" target="_blank"><i class="flaticon-facebook redes__link"></i></a>
+                </div>
+                <div class="col-2 col-md-1 text-center">
+                    <a href="https://www.instagram.com/pupukis.food/" target="_blank"><i class="flaticon-instagram redes__link"></i></a>
+                </div>
+            </div>
+          </form>
+        <p class="redes__texto-footer">Copyright © 2021 - Pupukis Food.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
