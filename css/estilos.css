@@ -30,8 +30,6 @@ a {
     padding-left: 1em;
     padding-right: 1em;
     transition: 300ms ease-in-out; }
-  .navbar__menu:hover {
-    text-decoration: underline #db74bb 0.2em; }
   .navbar__link {
     color: #4FB2A3;
     text-decoration: none;
@@ -44,6 +42,13 @@ a {
   .navbar__responsive {
     background-color: #4FB2A3;
     border: 1px solid #000; }
+  .navbar__submenu {
+    border-radius: 0px;
+    border: 1px solid #4fb2a3;
+    padding: 0; }
+  .navbar__submenu a:hover {
+    background-color: #522D76;
+    color: #fff; }
 
 .logo-pupukis {
   width: 7em;
@@ -235,10 +240,10 @@ h3 {
   .seccion-productos h2 {
     text-align: center;
     margin-bottom: 1em; }
-  .seccion-productos div.envio-pago {
+  .seccion-productos .envio-pago {
     display: flex;
     justify-content: space-evenly; }
-  .seccion-productos div.medios {
+  .seccion-productos .medios {
     text-align: center;
     justify-items: center; }
   .seccion-productos h3 {
@@ -258,15 +263,19 @@ h3 {
 
 /*NOSOTROS*/
 .seccion-nosotros {
-  text-align: center;
   background-color: #522D76; }
+
+.columna-nosotros {
+  background-image: url(../images/nosotros.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*CLIENTES*/
 .imagenes-clientes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  column-gap: 1em;
   row-gap: 1em; }
 
 .fondo-degrade {
