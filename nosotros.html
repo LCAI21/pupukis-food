@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" type="image/jpg" href="svg/pupukis-food-logo.svg"/>
     <link rel="stylesheet" href="font/flaticon.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -28,11 +29,11 @@
           <li class="navbar__menu dropdown">
             <a class="navbar__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
             <ul class="dropdown-menu navbar__submenu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="productos.html">Helados</a></li>
-              <li><a class="dropdown-item" href="productos.html">Bocados Frozen</a></li>
-              <li><a class="dropdown-item" href="productos.html">Gelatinas Yum</a></li>
-              <li><a class="dropdown-item" href="productos.html">Grisines</a></li>
-              <li><a class="dropdown-item" href="productos.html">Dips</a></li>
+              <li><a class="dropdown-item navbar__link" href="productos.html">Helados</a></li>
+              <li><a class="dropdown-item navbar__link" href="productos.html">Bocados Frozen</a></li>
+              <li><a class="dropdown-item navbar__link" href="productos.html">Gelatinas Yum</a></li>
+              <li><a class="dropdown-item navbar__link" href="productos.html">Grisines</a></li>
+              <li><a class="dropdown-item navbar__link" href="productos.html">Dips</a></li>
             </ul>
           </li>
           <li class="navbar__menu">
@@ -44,6 +45,12 @@
           <li class="navbar__menu">
             <a class="navbar__link" href="contacto.html">CONTACTO</a>
           </li>
+          <li class="navbar__menu">
+            <a href="https://www.facebook.com/PupukisFood/" target="_blank"><i class="flaticon-facebook navbar__redes"></i></a>
+          </li>
+          <li class="navbar__menu">
+            <a href="https://www.instagram.com/pupukis.food/" target="_blank"><i class="flaticon-instagram navbar__redes"></i></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -53,23 +60,24 @@
         <img src="images/banner-nosotros.png" alt="Foto del equipo de Pupukis Food" class="banner-principal">
     </main>
 
-    <section class="margen seccion-nosotros container-fluid">
+    <section class="margen-nosotros seccion-nosotros container-fluid">
       <div class="row">
-        <div class="col-12 col-md-6">
-            <h1 class="titulo celeste">SOBRE PUPUKIS FOOD</h1>
-            <p class="blanco">
+        <div class="col-12 col-md-6 padding-top">
+          <h1 class="titulo-nosotros violeta">SOBRE PUPUKIS FOOD</h1>
+            <p class="">
                 Somos Anto, Buki, Nancy, Ares, Fede y Atenas. 3 humanos y 3 perros. Fundamos Pupukis en diciembre del 2019. Comenzamos a cocinar snacks naturales para nuestros hijos perrunos. La experiencia fue increíble. Tanto que nos dimos cuenta que más perros merecían lo mismo.
             </p>
-            <h5 class="celeste">Nuestras mascotas son parte de nuestra familia</h5>
-            <p class="blanco">
+            <h5 class="violeta">Nuestras mascotas son parte de nuestra familia</h5>
+            <p class="">
                 Siempre queremos saber qué es lo que están comiendo. Y su salud va de la mano de su alimentación. Nuestro primer producto a la venta fueron los helados.
                 Trabajamos con mucha creatividad en cada una de nuestras recetas. Los colores obtenidos son gracias a la combinación de los ingredientes que usamos.
             </p>
-            <h5 class="celeste">
+            <h5 class="violeta">
                 Nuestra propuesta de valor, más allá de lo que ofrecemos, es escuchar a nuestros clientes. Buscamos generar comunidad involucrándonos con ellos.
             </h5>
         </div>
-        <div class="col-12 col-md-5 offset-1 columna-nosotros">
+        <div class="col-12 col-md-5 offset-1 columna-nosotros" data-aos="fade-left" data-aos-offset="500" data-aos-duration="700">
+          <img src="images/sobre-nosotros.png" alt="">
         </div>
       </div>
     </section>
@@ -96,5 +104,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

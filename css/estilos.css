@@ -26,7 +26,8 @@ a {
     margin-right: 0; }
   .navbar__menu {
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding-left: 1em;
     padding-right: 1em;
     transition: 300ms ease-in-out; }
@@ -37,8 +38,7 @@ a {
     font-family: "Montserrat";
     transition: 300ms ease-in-out; }
   .navbar__link:hover {
-    color: #F73C4A;
-    transform: scale(1.05); }
+    color: #F73C4A; }
   .navbar__responsive {
     background-color: #4FB2A3;
     border: 1px solid #000; }
@@ -49,6 +49,9 @@ a {
   .navbar__submenu a:hover {
     background-color: #522D76;
     color: #fff; }
+  .navbar__redes {
+    font-size: 2em;
+    color: #522D76; }
 
 .logo-pupukis {
   width: 7em;
@@ -71,6 +74,14 @@ a {
   padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 10%; }
+
+.margen-nosotros {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.padding-top {
+  padding-top: 1.5em; }
 
 .centrar {
   display: flex;
@@ -114,7 +125,7 @@ a {
 /*TITULOS Y PARRAFO*/
 h1 {
   font-family: "Montserrat";
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold; }
 
 h2, h3, h4 {
@@ -129,6 +140,25 @@ p {
 
 h3 {
   font-size: 1.5em; }
+
+.titulo-productos {
+  color: #fff;
+  text-shadow: 2px 2px 4px #522D76; }
+
+.titulo-productos-home {
+  color: #fff;
+  text-shadow: 2px 2px 4px #522D76;
+  padding-bottom: 1em; }
+
+.titulo-nosotros {
+  color: #522D76;
+  text-shadow: 2px 2px 4px #70ffea;
+  padding-bottom: 0.5em; }
+
+.titulo-clientes {
+  color: #fff;
+  text-shadow: 2px 2px 4px #522D76;
+  padding-bottom: 1em; }
 
 /*GALERIA HOME*/
 .galeria {
@@ -147,7 +177,7 @@ h3 {
   .galeria__texto {
     margin-top: 0.7em;
     display: block;
-    font-size: 0.7em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.8em;
     color: #BDFFF5; }
@@ -238,8 +268,7 @@ h3 {
 .seccion-productos {
   background-color: #fff; }
   .seccion-productos h2 {
-    text-align: center;
-    margin-bottom: 1em; }
+    text-align: center; }
   .seccion-productos .envio-pago {
     display: flex;
     justify-content: space-evenly; }
@@ -258,18 +287,13 @@ h3 {
 .card {
   align-items: inherit; }
 
-.titulo-productos {
-  margin: 1em 0; }
-
 /*NOSOTROS*/
 .seccion-nosotros {
-  background-color: #522D76; }
+  background-color: #f2edee; }
 
 .columna-nosotros {
-  background-image: url(../images/nosotros.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  animation-duration: 3s;
+  animation-name: slidein; }
 
 /*CLIENTES*/
 .imagenes-clientes {
