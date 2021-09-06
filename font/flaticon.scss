@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?1349945cfea72e3a744c8b3d04370f0e") format("truetype"),
-url("./flaticon.woff?1349945cfea72e3a744c8b3d04370f0e") format("woff"),
-url("./flaticon.woff2?1349945cfea72e3a744c8b3d04370f0e") format("woff2"),
-url("./flaticon.eot?1349945cfea72e3a744c8b3d04370f0e#iefix") format("embedded-opentype"),
-url("./flaticon.svg?1349945cfea72e3a744c8b3d04370f0e#flaticon") format("svg");
+    src: url("./flaticon.ttf?97852e66c79812a2ecd96ab9da64475c") format("truetype"),
+url("./flaticon.woff?97852e66c79812a2ecd96ab9da64475c") format("woff"),
+url("./flaticon.woff2?97852e66c79812a2ecd96ab9da64475c") format("woff2"),
+url("./flaticon.eot?97852e66c79812a2ecd96ab9da64475c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?97852e66c79812a2ecd96ab9da64475c#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -28,12 +28,17 @@ $flaticon-map: (
     "pets": "\f105",
     "dieta": "\f106",
     "instagram": "\f107",
-    "facebook": "\f108",
-    "paquete": "\f109",
-    "metodo-de-pago": "\f10a",
-    "llamada-telefonica": "\f10b",
-    "mapa": "\f10c",
-    "email": "\f10d",
+    "paquete": "\f108",
+    "metodo-de-pago": "\f109",
+    "llamada-telefonica": "\f10a",
+    "mapa": "\f10b",
+    "email": "\f10c",
+    "helado": "\f10d",
+    "huella": "\f10e",
+    "gelatina": "\f10f",
+    "palos": "\f110",
+    "salsa-de-tomate": "\f111",
+    "facebook": "\f112",
 );
 
 .flaticon-bio:before {
@@ -57,9 +62,6 @@ $flaticon-map: (
 .flaticon-instagram:before {
     content: map-get($flaticon-map, "instagram");
 }
-.flaticon-facebook:before {
-    content: map-get($flaticon-map, "facebook");
-}
 .flaticon-paquete:before {
     content: map-get($flaticon-map, "paquete");
 }
@@ -74,4 +76,22 @@ $flaticon-map: (
 }
 .flaticon-email:before {
     content: map-get($flaticon-map, "email");
+}
+.flaticon-helado:before {
+    content: map-get($flaticon-map, "helado");
+}
+.flaticon-huella:before {
+    content: map-get($flaticon-map, "huella");
+}
+.flaticon-gelatina:before {
+    content: map-get($flaticon-map, "gelatina");
+}
+.flaticon-palos:before {
+    content: map-get($flaticon-map, "palos");
+}
+.flaticon-salsa-de-tomate:before {
+    content: map-get($flaticon-map, "salsa-de-tomate");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
 }

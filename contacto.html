@@ -57,8 +57,8 @@
   </nav>
 
     <section class="container-fluid margen formulario">
-        <h1 class="titulo text-center blanco">CONTACTANOS</h1>
-        <div class="row justify-content-evenly">
+        <h1 class="titulo-contacto text-center blanco">CONTACTANOS</h1>
+        <div class="row justify-content-evenly formulario__columnas">
             <div class="col-12 col-lg-3 formulario__contacto">
               <div class="formulario__datos">
                 <a href="https://www.instagram.com/pupukis.food/" target="_blank"><i class="flaticon-llamada-telefonica formulario__icono"></i></a>
@@ -68,11 +68,11 @@
               <div class="formulario__datos">
                 <a href="https://www.instagram.com/pupukis.food/" target="_blank"><i class="flaticon-email formulario__icono"></i></a>
                 <h3>EMAIL</h3>
-                <h5>contacto@pupukisfood.com</h5>
+                <h5>contacto@pupukis.com</h5>
               </div>
               <div class="formulario__datos">
                 <a href="https://www.instagram.com/pupukis.food/" target="_blank"><i class="flaticon-mapa formulario__icono"></i></a>
-                <h3>PUNTOS DE RETIRO</h3>
+                <h3>RETIROS</h3>
                 <h5>Villa Pueyrredon</h5>
                 <h5>Palermo</h5>
               </div>
@@ -91,7 +91,7 @@
                   <textarea type="text" class="form-control" id="mensaje" cols="30" rows="10"></textarea>
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
                   <label class="form-check-label formulario__campo" for="exampleCheck1">¿Desea recibir el newsletter?</label>
                 </div>
                 <button type="submit" class="btn boton formulario__btn">Enviar</button>
@@ -101,18 +101,15 @@
 
     <footer class="redes">
       <form class="container redes__newsletter blanco">
-          <h2 class="text-center ">SUSCRIBITE AL NEWSLETTER</h2>
-          <div class="row justify-content-center">
-              <div class="col-6"><input type="email" class="form-control redes__campo" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"></div>
-          </div>
-          <div class="row justify-content-center">
-              <button type="submit" class="btn boton btn-primary col-4 col-md-2">Suscribirme</button>
-          </div>
-          <div class="row justify-content-center redes__icono">
-              <div class="col-2 col-md-1 text-center">
-                  <a href="https://www.facebook.com/PupukisFood/" target="_blank"><i class="flaticon-facebook redes__link"></i></a>
+          <div class="redes__suscripcion">
+              <h2 class="text-center ">SUSCRIBITE AL NEWSLETTER</h2>
+              <div class="redes__email form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                <label for="floatingInput">Email</label>
               </div>
-              <div class="col-2 col-md-1 text-center">
+              <button type="submit" class="btn boton btn-primary col-4 col-md-2 redes__boton">Suscribirme</button>
+              <div class="redes__icono">
+                  <a href="https://www.facebook.com/PupukisFood/" target="_blank"><i class="flaticon-facebook redes__link"></i></a>
                   <a href="https://www.instagram.com/pupukis.food/" target="_blank"><i class="flaticon-instagram redes__link"></i></a>
               </div>
           </div>

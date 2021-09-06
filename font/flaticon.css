@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?1349945cfea72e3a744c8b3d04370f0e") format("truetype"),
-url("./flaticon.woff?1349945cfea72e3a744c8b3d04370f0e") format("woff"),
-url("./flaticon.woff2?1349945cfea72e3a744c8b3d04370f0e") format("woff2"),
-url("./flaticon.eot?1349945cfea72e3a744c8b3d04370f0e#iefix") format("embedded-opentype"),
-url("./flaticon.svg?1349945cfea72e3a744c8b3d04370f0e#flaticon") format("svg");
+    src: url("./flaticon.ttf?97852e66c79812a2ecd96ab9da64475c") format("truetype"),
+url("./flaticon.woff?97852e66c79812a2ecd96ab9da64475c") format("woff"),
+url("./flaticon.woff2?97852e66c79812a2ecd96ab9da64475c") format("woff2"),
+url("./flaticon.eot?97852e66c79812a2ecd96ab9da64475c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?97852e66c79812a2ecd96ab9da64475c#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -39,21 +39,36 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-instagram:before {
     content: "\f107";
 }
-.flaticon-facebook:before {
+.flaticon-paquete:before {
     content: "\f108";
 }
-.flaticon-paquete:before {
+.flaticon-metodo-de-pago:before {
     content: "\f109";
 }
-.flaticon-metodo-de-pago:before {
+.flaticon-llamada-telefonica:before {
     content: "\f10a";
 }
-.flaticon-llamada-telefonica:before {
+.flaticon-mapa:before {
     content: "\f10b";
 }
-.flaticon-mapa:before {
+.flaticon-email:before {
     content: "\f10c";
 }
-.flaticon-email:before {
+.flaticon-helado:before {
     content: "\f10d";
+}
+.flaticon-huella:before {
+    content: "\f10e";
+}
+.flaticon-gelatina:before {
+    content: "\f10f";
+}
+.flaticon-palos:before {
+    content: "\f110";
+}
+.flaticon-salsa-de-tomate:before {
+    content: "\f111";
+}
+.flaticon-facebook:before {
+    content: "\f112";
 }
