@@ -419,7 +419,10 @@ h3 {
   .titulo-clientes {
     padding-top: 1em; }
   .gap {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .titulo-productos-home {
+    padding-top: 1em;
+    font-size: 2.2em; } }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   .contenedor {
@@ -448,7 +451,9 @@ h3 {
   .titulo-clientes {
     padding-top: 1em; }
   .gap {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .titulo-productos-home {
+    padding-top: 1em; } }
 
 @media only screen and (max-width: 785px) {
   .formulario__contacto {

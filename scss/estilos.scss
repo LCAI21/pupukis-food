@@ -588,6 +588,11 @@ h3{
     .gap{
         flex-wrap: wrap;
     }
+
+    .titulo-productos-home{
+        padding-top: 1em;
+        font-size: 2.2em;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px){
@@ -634,6 +639,10 @@ h3{
 
     .gap{
         flex-wrap: wrap;
+    }
+
+    .titulo-productos-home{
+        padding-top: 1em;
     }
 }
 
